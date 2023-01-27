@@ -1,6 +1,6 @@
 {
   "name": "@fantastic-utils/data-type",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Get correctly data type from javascript value",
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
@@ -12,6 +12,9 @@
     "prepublishOnly": "father doctor && npm run build"
   },
   "keywords": [
+    "dataType",
+    "getDataType",
+    "get data type",
     "Data Type"
   ],
   "authors": [
