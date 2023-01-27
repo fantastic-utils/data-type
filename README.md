@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/@fantastic-utils/data-type.svg?style=flat)](https://npmjs.org/package/@fantastic-utils/data-type)
 [![NPM downloads](http://img.shields.io/npm/dm/@fantastic-utils/data-type.svg?style=flat)](https://npmjs.org/package/@fantastic-utils/data-type)
 
-This is a library for get correct data type from javascript values. Why use this lib? `typeof` and `instanceOf` have some limitations, so we should combine them all to resolve all complex scenarios.
+This is a library for get correct data type from javascript values. Why use this lib? As `typeof` have some limitations.
 
 ## Quick Start
 

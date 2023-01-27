@@ -1,25 +1,17 @@
 const { toString: getTypeString } = Object.prototype;
 const reg = /(?<=\[object )\w+(?=\])/;
 
-export enum DataType {
-  UNDEFINED = "Undefined",
-  NULL = "Null",
-  OBJECT = "Object",
-  ARRAY = "Array",
-  STRING = "String",
-  NUMBER = "Number",
-  BOOLEAN = "BOOLEAN",
-  MAP = "Map",
-  SET = "Set",
-  WEAKMAP = "WeakMap",
-  WEAKSET = "WeakSet",
-  PROMISE = "Promise",
-  FUNCTION = "Function",
-  ASYNCFUNCTION = "AsyncFunction",
-  WEBSOCKET = "WebSocket",
-}
+export type ReturnType = string | undefined;
 
-export type ReturnType = DataType | undefined;
-
+/**
+ * Get the correct type from value
+ *
+ * @description the type is a enum value like `String`,
+ *   `Number`, `Boolean`, `Object`, `Array`, `Map`,
+ *   `Set`, `Promise`, `WeakMap`, `Websocket` etc...
+ *
+ * @param value Any value
+ * @returns The Type name
+ */
 export const getDataType = (value: any): ReturnType =>
   getTypeString.call(value).match(reg)?.[0] as ReturnType;
