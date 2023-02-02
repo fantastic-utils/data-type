@@ -19,6 +19,7 @@ getDataType('a'); // return String
 getDataType({}); // return Object
 getDataType([]); // return Array
 getDataType(false); // return Boolean
+getDataType(Symbol('a')); // return Symbol
 getDataType(new WeakMap()); // return WeakMap
 getDataType(new Map()); // return Map
 getDataType(new Proxy({}, {})); // return Object
@@ -28,6 +29,7 @@ getDataType(Promise.resolve(1)); // return Promise
 getDataType(NaN); // return Number
 getDataType(Infinity); // return Number
 getDataType(() => {}); // return Function
+getDataType(new Websocket('wss://example.com')); // return Websocket
 
 // etc...
 ```

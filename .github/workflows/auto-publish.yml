@@ -16,6 +16,8 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm test
+      - name: Upload coverage reports to Codecov with GitHub Action
+        uses: codecov/codecov-action@v3
 
   publish-npm:
     needs: test

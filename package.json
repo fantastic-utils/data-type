@@ -7,7 +7,7 @@
   "sideEffects": "flag",
   "scripts": {
     "dev": "father dev",
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "father build",
     "prepublishOnly": "father doctor && npm run build"
   },
