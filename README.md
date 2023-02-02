@@ -2,6 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/@fantastic-utils/data-type.svg?style=flat)](https://npmjs.org/package/@fantastic-utils/data-type)
 [![NPM downloads](http://img.shields.io/npm/dm/@fantastic-utils/data-type.svg?style=flat)](https://npmjs.org/package/@fantastic-utils/data-type)
+[![codecov](https://codecov.io/gh/fantastic-utils/data-type/branch/main/graph/badge.svg?token=YH3CN7XAN5)](https://codecov.io/gh/fantastic-utils/data-type)
 
 This is a library for get correct data type from javascript values. Why use this lib? As `typeof` have some limitations.
 

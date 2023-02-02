@@ -1,6 +1,6 @@
 {
   "name": "@fantastic-utils/data-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get correctly data type from javascript value",
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
