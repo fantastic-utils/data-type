@@ -1,7 +1,10 @@
 const { toString: getTypeString } = Object.prototype;
 const reg = /(?<=\[object )\w+(?=\])/;
 
-export type ReturnType = string | undefined;
+export type UNKNOW_TYPE = 'unknown';
+export type ReturnType = string | UNKNOW_TYPE;
+
+export const UNKNOW_TYPE = 'unknown';
 
 /**
  * Get the correct type from value
@@ -13,5 +16,5 @@ export type ReturnType = string | undefined;
  * @param value Any value
  * @returns The Type name
  */
-export const getDataType = (value: any): ReturnType =>
-  getTypeString.call(value).match(reg)?.[0] as ReturnType;
+export const getDataType = (value: any, short: boolean = false): ReturnType =>
+  (getTypeString.call(value).match(reg)?.[0] ?? UNKNOW_TYPE) as ReturnType;
