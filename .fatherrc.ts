@@ -1,5 +1,6 @@
-import { defineConfig } from "father";
+import { defineConfig } from 'father';
 
 export default defineConfig({
-  esm: { input: "src" },
+  esm: { input: 'src' },
+  cjs: { input: 'src' },
 });
